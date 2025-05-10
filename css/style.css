@@ -112,12 +112,15 @@ body {
 }
 
 .company-rating {
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 .company-rating .five-stars {
     color: #1261C9;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
 }
 
 .competitors-data {
