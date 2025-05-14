@@ -24,16 +24,9 @@ const url2 = 'https://buy.aura.com/a-save?irclickid=UpUS8A0lhxycTVGQ6qUOJ1wxUksW
 
 Object.entries(Tags).forEach(([tagName, ids]) => {
     ids.forEach((id) => {
-
         const element = document.getElementById(id);
-        if (element) {
-            if (tagName === 'Aura') {
-                element.href = url2;
-            } else {
-                element.href = url;
-            }
-        } else {
+        element ?
+            (tagName === 'Aura' ? element.href = url2 : element.href = url) :
             console.log(`Element with ID ${id} not found.`);
-        }
     });
 });
