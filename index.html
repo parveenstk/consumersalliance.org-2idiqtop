@@ -440,22 +440,10 @@
    </footer>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   <span id="lastUpdated"></span>
 
    <!-- Import Scripts -->
    <script src="js/index.js"></script>
-   <script>
-      document.addEventListener("DOMContentLoaded", function () {
-         let date = new Date();
-         date.setMonth(date.getMonth() - 1); // Subtract one month
-
-         let formattedDate = date.toLocaleDateString("en-US", {
-            year: 'numeric', month: 'long', day: 'numeric'
-         });
-
-         document.getElementById("lastUpdated").innerText = "Last Updated: " + formattedDate;
-      });
-   </script>
+   <script src="js/date.js"></script>
 </body>
 
 </html
