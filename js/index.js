@@ -30,22 +30,10 @@ Object.entries(Tags).forEach(([tagName, ids]) => {
     ids.forEach((id) => {
         const element = document.getElementById(id);
 
-        if (element) {
-            if (tagName === 'Aura') {
-                element.href = url2;
-                element.target = '_blank';
-            } else if (tagName === 'IdentityIq') {
-                element.href = url;
-                element.target = '_blank';
-            } else if (tagName === 'Summary1') {
-                element.href = sum1;
-                element.target = '_blank';
-            } else {
-                element.href = sum2;
-                element.target = '_blank';
-            }
-        } else {
-            console.log(`Element with ID ${id} not found.`);
-        }
+        element ? (tagName === 'Aura' ? (element.href = url2, element.target = '_blank') :
+            (tagName === 'IdentityIq') ? (element.href = url, element.target = '_blank') :
+                (tagName === 'Summary1') ? (element.href = sum1, element.target = '_blank') :
+                    (element.href = sum2, element.target = '_blank'))
+            : console.log(`Element with ID ${id} not found.`);
     });
 });
