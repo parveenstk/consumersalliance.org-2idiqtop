@@ -5,6 +5,7 @@ const Tags = {
         'identityIq-Plans',
         'identityIq-Site',
         'identityIq-Link',
+        'identityIq-Link2',
         'identityIq-Plans2',
         'identityIq-Site2',
         'lifeLock-Plans',
