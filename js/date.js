@@ -1,8 +1,8 @@
-// Last Updated Date Function
+// date function
 
 document.addEventListener("DOMContentLoaded", function () {
     let date = new Date();
-    date.setMonth(date.getMonth() - 1); // Subtract one month
+    date.setDate(date.getDate() - 14); // Subtract 14 days (2 weeks)
 
     let formattedDate = date.toLocaleDateString("en-US", {
         year: 'numeric', month: 'long', day: 'numeric'

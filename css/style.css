@@ -369,6 +369,12 @@ a.office-site {
 /* Media Queries */
 @media screen and (max-width: 767px) {
 
+    .d-block {
+        margin-bottom: 0px !important;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+
     .hrozin {
         margin-top: 20px;
         margin-bottom: 20px;
